@@ -17,7 +17,9 @@
 <link rel="stylesheet"
 	href="<%=request.getContextPath()%>/resources/css/style.css">
 	
-<style></style>
+<style>
+	
+</style>
 </head>
 <body>
 	<section class="ftco-section">
@@ -33,13 +35,13 @@
 					<div class="login">
                   <p class="mb-0 d-flex">
                      <c:if test ="${sessionScope.loginId == null}">
-                     <a href="loginForm" class="login"><span>로그인</span></a>
-                     <a href="joinForm" class="login"><span>회원가입</span></a>
+                     <a href="loginForm" class="login"><span style="font-size: 15px">로그인</span></a>
+                     /&nbsp;&nbsp;&nbsp;&nbsp;<a href="joinForm" class="login"><span style="font-size: 15px">회원가입</span></a>
                      </c:if>
                      <c:if test ="${sessionScope.loginId != null}">
                      안녕하세요 ${sessionScope.loginId} 님
-                     <a href="logout">로그아웃</a>
-                     &nbsp;&nbsp;/&nbsp;&nbsp; 
+                     &nbsp;&nbsp;/&nbsp;&nbsp;<a href="logout" style="font-size: 15px">로그아웃</a>
+                     &nbsp;&nbsp;&nbsp;&nbsp; 
                      </c:if>
                      
                   </p>
@@ -52,7 +54,7 @@
 									src="<%=request.getContextPath()%>/resources/img/mypage.png"
 									width="30">
 							</span></a> 
-							<a href="map"
+							<a href="./whatPage?page=근처여행지찾기"
 								class="d-flex align-items-center justify-content-center"><span>
 									<img src="<%=request.getContextPath()%>/resources/img/map.png"
 									width="30">

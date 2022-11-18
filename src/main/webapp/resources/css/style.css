@@ -249,6 +249,7 @@ input[type="month"] {
   -webkit-appearance: listbox; }
 
 textarea {
+  
   overflow: auto;
   resize: vertical; }
 
@@ -1332,6 +1333,7 @@ pre {
     margin-left: 91.66667%; } }
 
 .table {
+	
   width: 100%;
   margin-bottom: 1rem;
   color: #212529; }
@@ -5538,7 +5540,8 @@ button.bg-dark:focus {
 .d-flex {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
-  display: flex !important; }
+  display: flex !important; 
+  }
 
 .d-inline-flex {
   display: -webkit-inline-box !important;
@@ -8312,8 +8315,8 @@ h1, h2, h3, h4, h5,
 .login{
 	display: inline-block;}
 	.login p a{
-		width: 40px;
-    	height: 40px;
+		width: 60px;
+    	height: 60px;
 		margin-right: 4px;}
 	.login p a span {
       color: #4d4d4d; }
